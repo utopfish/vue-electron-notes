@@ -23,3 +23,13 @@ npm run electron:build
 ```
 npm run lint
 ```
+## 长远目标
+1. 完成双向链接。
+2. 显示知识谱图
+
+## 中期目标
+1. 加入双窗口
+1. 加入typora一个所见即所得，使用veditor
+
+## 短期目标
+完成TODOlist

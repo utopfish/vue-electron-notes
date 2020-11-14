@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <div class="sidebar-container">
-      <file-search
+      <file-manager
         v-model.trim="searchTitle"
         @create="fileCreate"
         @clear="getFileList"
@@ -35,13 +35,13 @@
 
 <script>
 import dayjs from 'dayjs'
-import FileSearch from '@/components/FileSearch'
+import FileManager from '@/components/FileManager'
 import FileList from '@/components/FileList'
 import FileEdit from '@/components/FileEdit'
 
 export default {
   name: 'Home',
-  components: { FileSearch, FileList, FileEdit },
+  components: { FileManager, FileList, FileEdit },
   data() {
     return {
       searchTitle: '',

@@ -7,22 +7,21 @@
  -->
 <template>
   <div class="search-container">
-    <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$listeners">
+    <!-- <el-input placeholder="请输入内容" v-bind="$attrs" v-on="$listeners">
       <el-button slot="append" icon="el-icon-search" @click.native="onSearch()" />
-    </el-input>
-    <el-dropdown>
-      <el-button type="primary" icon="el-icon-circle-plus-outline" circle />
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item @click.native="createFile()">新建笔记</el-dropdown-item>
-        <el-dropdown-item divided @click.native="importFile()">导入文件</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
+    </el-input> -->
+
+    <el-button  icon="el-icon-document-add" @click.native="createFile()" type="primary" ></el-button>
+    <!-- <el-dropdown-item divided @click.native="importFile()">导入文件</el-dropdown-item> -->
+
   </div>
 </template>
 
 <script>
+// TODO:1. 加入文件夹功能
+// TODO:2. 加入文件拖拽功能
 export default {
-  name: 'FileSearch',
+  name: 'FileManager',
   methods: {
     // 搜索笔记
     onSearch() {
